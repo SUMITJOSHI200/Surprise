@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Special Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/music/lover.mp3" type="audio/mpeg">
+    </audio>
+
+    
+
+
+    <!-- SCREEN 1: Opening -->
+
+    <section id="openingScreen" class="screen">
+
+        <h1>Are you lesbian? 😂</h1>
+
+        <img src="images/photo1.jpg" alt="Photo 1">
+
+        <div class="buttons">
+
+            <button onclick="sayYes()">Yes ❤️</button>
+
+            <button onclick="sayNo()">No 🙈</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 2: Apology -->
+
+    <section id="apologyScreen" class="screen hidden">
+
+        <h1>Sorry, I am joking 😂</h1>
+
+        <img src="images/photo2.jpg" alt="Photo 2">
+
+        <button onclick="showOptions()">Next ❤️</button>
+
+    </section>
+
+
+    <!-- SCREEN 3: Options -->
+
+    <section id="optionsScreen" class="screen hidden">
+
+        <h1>What do you want to do with me? ❤️</h1>
+
+        <div class="optionContainer">
+
+            <button onclick="selectOption('date')">
+
+                <img src="images/photo3.jpg" alt="Date">
+
+                Are you want to come with me on a date? ❤️
+
+            </button>
+
+
+            <button onclick="selectOption('shopping')">
+
+                <img src="images/photo4.jpg" alt="Shopping">
+
+                Shopping with me 🛍️
+
+            </button>
+
+
+            <button onclick="selectOption('travel')">
+
+                <img src="images/photo5.jpg" alt="Travel">
+
+                Ghumne with me 🌍
+
+            </button>
+
+
+            <button onclick="selectOption('number')">
+
+                <img src="images/photo6.jpg" alt="Number">
+
+                No Sory
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 4: Budget -->
+
+    <section id="budgetScreen" class="screen hidden">
+
+        <h1>What's your budget? 😂</h1>
+
+        <div class="buttons">
+
+            <button onclick="chooseBudget('₹1,000 – ₹2,000')">
+
+                ₹1,000 – ₹2,000
+
+            </button>
+
+
+            <button onclick="chooseBudget('₹2,000 – ₹4,000')">
+
+                ₹2,000 – ₹4,000
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 5: Number -->
+
+    <section id="numberScreen" class="screen hidden">
+
+        <h1>Oh! To meko apna number dede insta pe text kr  😂</h1>
+
+        <img src="images/photo6.jpg" alt="Funny Photo">
+
+        <h2>First say hello, then I will think about it! 😜</h2>
+
+        <button onclick="showFinal()">Okay ❤️</button>
+
+    </section>
+
+
+    <!-- SCREEN 6: Budget Response -->
+
+    <section id="responseScreen" class="screen hidden">
+
+        <h1 id="responseHeading">Good choice! 😂</h1>
+
+        <h2>Lete huye aana apne ghar se chura ke 😂</h2>
+
+        <button onclick="showFinal()">Next ❤️</button>
+
+    </section>
+
+
+    <!-- SCREEN 7: Final Surprise -->
+
+    <section id="finalScreen" class="screen hidden">
+
+        <h1>One Last Thing ❤️</h1>
+
+        <img src="images/photo7.jpg" alt="Final Surprise">
+
+        <h2>You're special! Don't forget that. ❤️</h2>
+
+        <p>Made with love and a little bit of madness 😂</p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
